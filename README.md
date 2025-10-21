@@ -27,7 +27,7 @@ Short description of the game and its genre.
 | Functions |	snake_case	|  |
 | Variables	| snake_case |  |
 | Signals	| snake_case | always in past tense "door_opened" |
-| Constants	| CONSTANT_CASE	|  |
+| Constants	| CONSTANT_CASE	 |  |
 | enum names	| PascalCase	|  |
 | enum members | CONSTANT_CASE |  |
 
