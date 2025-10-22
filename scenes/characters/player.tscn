@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c5k0jejm3aywh"]
 
-[ext_resource type="Texture2D" uid="uid://c32pwt2pu63n0" path="res://assets/art/PigFarmer.png" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://vtphofi80a2g" path="res://scr/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://flxxbt75oqtq" path="res://assets/sprites/characters/pig_farmer.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://vtphofi80a2g" path="res://scenes/characters/player.gd" id="1_g2els"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
 radius = 17.0

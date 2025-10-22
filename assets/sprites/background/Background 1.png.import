@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drbkmefo23q7g"
-path="res://.godot/imported/rycerz.png-1326ba6973146395f752f794baa8e76b.ctex"
+uid="uid://cfd0p5o5rwj58"
+path="res://.godot/imported/Background 1.png-90e3f028b17a627aad2567d3710cb587.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/characters/rycerz.png"
-dest_files=["res://.godot/imported/rycerz.png-1326ba6973146395f752f794baa8e76b.ctex"]
+source_file="res://assets/sprites/background/Background 1.png"
+dest_files=["res://.godot/imported/Background 1.png-90e3f028b17a627aad2567d3710cb587.ctex"]
 
 [params]
 
