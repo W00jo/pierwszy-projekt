@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drbkmefo23q7g"
-path="res://.godot/imported/rycerz.png-1326ba6973146395f752f794baa8e76b.ctex"
+uid="uid://grlx0t31rh84"
+path="res://.godot/imported/lonely_retreat.png-fa9be2765d2b2c2231253e4594fd144d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/characters/rycerz.png"
-dest_files=["res://.godot/imported/rycerz.png-1326ba6973146395f752f794baa8e76b.ctex"]
+source_file="res://assets/sprites/background/lonely_retreat.png"
+dest_files=["res://.godot/imported/lonely_retreat.png-fa9be2765d2b2c2231253e4594fd144d.ctex"]
 
 [params]
 
