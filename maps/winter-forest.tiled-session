@@ -1,0 +1,45 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "TestTiledMap.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "TestTiledMap.tmx": {
+            "scale": 2,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 502.25,
+                "y": -92
+            }
+        },
+        "WinterForest.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        }
+    },
+    "last.exportedFilePath": "C:/Jakub Wójcik/pierwszy-projekt/scenes/levels",
+    "last.imagePath": "C:/Jakub Wójcik/pierwszy-projekt/assets/sprites/enviroment",
+    "map.fixedSize": false,
+    "map.lastUsedExportFilter": "Godot 4 Scene files (*.tscn)",
+    "map.lastUsedFormat": "tmx",
+    "map.renderOrder": "3",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "openFiles": [
+        "TestTiledMap.tmx"
+    ],
+    "project": "winter-forest.tiled-project",
+    "recentFiles": [
+        "TestTiledMap.tmx",
+        "WinterForest.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

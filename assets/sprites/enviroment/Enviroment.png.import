@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djuj0sd46v06h"
-path="res://.godot/imported/chad.png-157412398429f6aaed5b695d46b6f58d.ctex"
+uid="uid://dntuqub8x5un2"
+path="res://.godot/imported/Enviroment.png-4dc03c23d398cb59932c9edbdfe122ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/chad.png"
-dest_files=["res://.godot/imported/chad.png-157412398429f6aaed5b695d46b6f58d.ctex"]
+source_file="res://assets/sprites/enviroment/Enviroment.png"
+dest_files=["res://.godot/imported/Enviroment.png-4dc03c23d398cb59932c9edbdfe122ae.ctex"]
 
 [params]
 
