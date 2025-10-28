@@ -18,6 +18,21 @@
 
 ## Praca własna | niedziela, 26 paź 2025
 
-1. Edycja **Project Settings**, dostosowanie **Display > Window** (z włączonymi **Advanced Settings**) do wartości odpowiednich dla gry w pixel arcie.
-2. Dodanie kamery śledzącej gracza.
-3. Usunięcie TileSet'ów ze sceny, w celu poprawienia ich i rozłożenia ponownie, nadal tak samo jak w **Goodboy Galaxy**.
+1. Edycja **Project Settings**
+  - Dostosowanie **Display > Window** (z włączonymi **Advanced Settings**) do wartości odpowiednich dla gry w pixel arcie.
+  - W **General > Layer Names > 2D Physics** ustawienie warstwy 1 jako gracza, warstwy 2 jako świat.
+3. Dodanie kamery śledzącej gracza.
+  - *Smoothing dopier 28 pazia dodałem.*
+4. Usunięcie TileSet'ów ze sceny, w celu poprawienia ich i rozłożenia ponownie, nadal tak samo jak w **Goodboy Galaxy**.
+
+## Podstawy pracy z silnikami gier wideo | wtorek, 28 paź 2025
+
+1. Edycja kodu poruszania się gracza.
+  - Podstawy takie w sumie, czyli czym jest **const**, czym jest **var**.
+  - Dodawanie komentarzy do kodu.
+    - Czego nie wiedziałem to dwa hashe dodają komentarz do wewnętrznej dokumentacji (**F1** lub zakładka **Help**).
+3. Rozkładanie kolajderów na scenie poziomu.
+4. Dodanie kamery do sceny gracza.
+  - Dodanie smoothing'u.
+  - Wyjaśnienie czym jest "Dead zone".
+  - Ustawienie Limit Camera2D, aby nie widzieć szarego tła.

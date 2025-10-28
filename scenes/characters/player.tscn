@@ -12,6 +12,7 @@ script = ExtResource("1_g2els")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -24)
+position_smoothing_enabled = true
 
 [node name="PigFarmer" type="Sprite2D" parent="."]
 scale = Vector2(0.75, 0.75)

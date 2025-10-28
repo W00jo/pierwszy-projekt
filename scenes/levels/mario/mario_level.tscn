@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://ckd5x6iwsabuy"]
+
+[ext_resource type="Texture2D" uid="uid://4yr8pucx4l45" path="res://assets/sprites/LVL1-1Mario.png" id="1_82wg4"]
+[ext_resource type="Script" uid="uid://cp2qinj50cpet" path="res://scenes/levels/mario/granica_planszy.gd" id="2_wbsvc"]
+[ext_resource type="PackedScene" uid="uid://c5k0jejm3aywh" path="res://scenes/characters/player.tscn" id="3_4w7eg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_skyv7"]
+size = Vector2(2208, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4s8r3"]
+size = Vector2(480, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pn1u1"]
+size = Vector2(2048, 64)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_pn1u1"]
+distance = -161.0
+
+[node name="MarioLevel2" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(3584, 8)
+collision_layer = 2
+
+[node name="MarioLevel" type="Sprite2D" parent="StaticBody2D"]
+texture = ExtResource("1_82wg4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-2480, 208)
+shape = SubResource("RectangleShape2D_skyv7")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1072, 208)
+shape = SubResource("RectangleShape2D_4s8r3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(288, 208)
+shape = SubResource("RectangleShape2D_pn1u1")
+
+[node name="GranicaPlanszy" type="Area2D" parent="."]
+collision_layer = 2
+script = ExtResource("2_wbsvc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GranicaPlanszy"]
+position = Vector2(-32, 87)
+shape = SubResource("WorldBoundaryShape2D_pn1u1")
+
+[node name="Player" parent="." instance=ExtResource("3_4w7eg")]
+position = Vector2(176, 128)
+
+[connection signal="body_entered" from="GranicaPlanszy" to="GranicaPlanszy" method="_on_body_entered"]
