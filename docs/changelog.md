@@ -20,4 +20,4 @@
 
 1. Edycja **Project Settings**, dostosowanie **Display > Window** (z włączonymi **Advanced Settings**) do wartości odpowiednich dla gry w pixel arcie.
 2. Dodanie kamery śledzącej gracza.
-3. Usunięcie TileSet'ów ze sceny, w celu poprawienia ich i rozłożenia ponownie, nadal tak samo jak z [22 paź 2025](#metody-level-designu--środa-22-paź-2025).
+3. Usunięcie TileSet'ów ze sceny, w celu poprawienia ich i rozłożenia ponownie, nadal tak samo jak w **Goodboy Galaxy**.
