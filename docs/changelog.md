@@ -11,7 +11,7 @@
 
 ## Metody level designu | środa, 22 paź 2025
 
-1. Rozkładanie **Tileset**'u w programie **`Tiled`**.
+1. Rozkładanie **TileSet**'u w programie **`Tiled`**.
    - Samo rozkładanie miało być w duchu designu poziomów **Goodboy Galaxy** (Goodboy Galaxy Limited, Rik Nicol, 2023).
 2. Exportowanie poziomu (to dużo powiedziane) do directory z Godotem.
    - Stworzona mapka jest w folderze `pierwszy-projekt\maps`.
@@ -36,3 +36,10 @@
   - Dodanie smoothing'u.
   - Wyjaśnienie czym jest "Dead zone".
   - Ustawienie Limit Camera2D, aby nie widzieć szarego tła.
+
+## Metody level designu | środa, 29 paź 2025
+
+1. Rozkładanie TileSet'u bez pomocy programu Tiled, przy pomocy Node'a TileMapLayer.
+2. Dodawanie właściwości (w inspektorze i nie tylko) do TileMapLayer oraz TileSetów
+  - 
+  - Custom Data Layers pomaga przypisywać odpowiednim kafelkom dany dźwięk.
