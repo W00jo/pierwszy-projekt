@@ -3,7 +3,7 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "TestTiledMap.tmx",
+    "activeFile": "",
     "expandedProjectPaths": [
         "."
     ],
@@ -13,7 +13,7 @@
             "selectedLayer": 6,
             "viewCenter": {
                 "x": 502.25,
-                "y": -92
+                "y": -156.5
             }
         },
         "WinterForest.tsx": {
@@ -30,7 +30,6 @@
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "openFiles": [
-        "TestTiledMap.tmx"
     ],
     "project": "winter-forest.tiled-project",
     "recentFiles": [
