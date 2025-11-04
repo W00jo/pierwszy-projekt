@@ -4,6 +4,17 @@ extends CharacterBody2D
 @export var SPEED : float = 200
 ## Wysokość skoku gracza.
 @export var JUMP_VELOCITY : float = -300
+## Odwołanie się do AnimationPlayer Node'a.
+@onready var animation: AnimationPlayer = $PlayerAnimation
+
+## Skrpt dodany na zajęciach.
+func _process(_delta: float) -> void:
+	if Input.is_action_pressed("move_left"):
+		animation.play("walk")
+	elif Input.is_action_pressed("move_right"):
+		animation.play("walk")
+	else:
+		animation.play("idle")
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -23,3 +34,11 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+# Te przeniosłem z Sandomirii.
+#func _ready() -> void:
+	#animation.play("idle")
+#
+#func _input(event) -> void:
+	#if event is InputEventKey:
+		#animation.play("walk")

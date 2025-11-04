@@ -43,3 +43,8 @@
 2. Dodawanie właściwości (w inspektorze i nie tylko) do TileMapLayer oraz TileSetów
   - 
   - Custom Data Layers pomaga przypisywać odpowiednim kafelkom dany dźwięk.
+
+## Podstawy pracy z silnikami gier wideo | wtorek, 28 paź 2025
+
+1. Dodawania animacji cyklu chodzenia oraz idle do Player'a.
+   - Collidery też można animować (np. PolygonShape)
