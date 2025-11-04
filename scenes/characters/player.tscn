@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5k0jejm3aywh"]
+[gd_scene load_steps=8 format=3 uid="uid://c5k0jejm3aywh"]
 
 [ext_resource type="Texture2D" uid="uid://flxxbt75oqtq" path="res://assets/sprites/characters/pig_farmer.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://vtphofi80a2g" path="res://scenes/characters/player.gd" id="1_g2els"]
@@ -6,18 +6,80 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yewv4"]
 size = Vector2(12.800018, 23.999992)
 
+[sub_resource type="Animation" id="Animation_yewv4"]
+resource_name = "idle"
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PigFarmer:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [9, 10, 9]
+}
+
+[sub_resource type="Animation" id="Animation_76oj4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PigFarmer:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [9]
+}
+
+[sub_resource type="Animation" id="Animation_dyp2m"]
+resource_name = "walk"
+length = 0.8
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PigFarmer:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dyp2m"]
+_data = {
+&"RESET": SubResource("Animation_76oj4"),
+&"idle": SubResource("Animation_yewv4"),
+&"walk": SubResource("Animation_dyp2m")
+}
+
 [node name="Player" type="CharacterBody2D"]
 collision_mask = 2
 script = ExtResource("1_g2els")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="PlayerCamera" type="Camera2D" parent="."]
 position = Vector2(0, -24)
+position_smoothing_enabled = true
 
 [node name="PigFarmer" type="Sprite2D" parent="."]
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("1_3vyb7")
 hframes = 16
+frame = 9
 
-[node name="CollisionPlayer" type="CollisionShape2D" parent="."]
+[node name="PlayerCollision" type="CollisionShape2D" parent="."]
 scale = Vector2(1.25, 1.25)
 shape = SubResource("RectangleShape2D_yewv4")
+
+[node name="PlayerAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_dyp2m")
+}
