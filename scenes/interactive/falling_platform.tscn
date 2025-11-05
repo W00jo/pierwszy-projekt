@@ -10,7 +10,7 @@ size = Vector2(66, 16)
 size = Vector2(66, 4)
 
 [node name="FallingPlatform" type="TileMapLayer"]
-tile_map_data = PackedByteArray(0, 0, 6, 0, 6, 0, 1, 0, 1, 0, 11, 0, 0, 0, 5, 0, 6, 0, 1, 0, 4, 0, 11, 0, 0, 0, 4, 0, 6, 0, 1, 0, 3, 0, 12, 0, 0, 0, 7, 0, 6, 0, 1, 0, 2, 0, 12, 0, 0, 0)
+tile_map_data = PackedByteArray(0, 0, 254, 255, 0, 0, 1, 0, 3, 0, 8, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0, 8, 0, 0, 0, 0, 0, 0, 0, 1, 0, 3, 0, 9, 0, 0, 0, 255, 255, 0, 0, 1, 0, 2, 0, 9, 0, 0, 0)
 tile_set = ExtResource("1_71sg4")
 script = ExtResource("2_j85hb")
 
@@ -18,14 +18,13 @@ script = ExtResource("2_j85hb")
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(96, 104)
+position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_j85hb")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(96, 94)
 shape = SubResource("RectangleShape2D_7vrec")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

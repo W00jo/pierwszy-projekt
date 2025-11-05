@@ -48,3 +48,20 @@
 
 1. Dodawania animacji cyklu chodzenia oraz idle do Player'a.
    - Collidery też można animować (np. PolygonShape)
+
+## Praca własna | środa, 5 lis 2025
+
+1. Dodanie platformy znikającej
+
+## Metody level designu | środa, 5 lis 2025
+
+Etapy level designu:
+
+   1. Koncept.
+   2. Makieta.
+   3. Cel, zachęty, znaczniki.
+   4. Scenariusz - czyli jakiś story np. enviromental story telling, czy worldbuilding, NIE wdrażamy ozdobników.
+   5. Tło.
+   6. Dekoracje
+
+   **UWAGA!** Ziutki na zaliczeniu zazwyczaj pomijają wszystko poza 2, 3, 6. "Widać jak ktoś to pomija... najgorsze levele, z poprzednij lat, to te gdzie ktoś robi makietę poziomu i dekoracje." Tldr; po knur te graficy.

@@ -10,9 +10,9 @@ extends CharacterBody2D
 ## Skrpt dodany na zajęciach.
 func _process(_delta: float) -> void:
 	if Input.is_action_pressed("move_left"):
-		animation.play("walk")
+		animation.play("walk_left")
 	elif Input.is_action_pressed("move_right"):
-		animation.play("walk")
+		animation.play("walk_right")
 	else:
 		animation.play("idle")
 
@@ -35,7 +35,7 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
-# Te przeniosłem z Sandomirii.
+## Te przeniosłem z Sandomirii.
 #func _ready() -> void:
 	#animation.play("idle")
 #

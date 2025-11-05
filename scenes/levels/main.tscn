@@ -1,8 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://kr7x4luxt4sk"]
+[gd_scene load_steps=8 format=3 uid="uid://kr7x4luxt4sk"]
 
 [ext_resource type="PackedScene" uid="uid://c5k0jejm3aywh" path="res://scenes/characters/player.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://bl1nu7hsxfwb5" path="res://scenes/levels/winter_level.tscn" id="2_2vj2h"]
-[ext_resource type="PackedScene" uid="uid://c1yvpqqoh1qw4" path="res://scenes/interactive/falling_platform.tscn" id="3_y0acb"]
+[ext_resource type="Texture2D" uid="uid://b2pbbmpbmv72r" path="res://assets/sprites/background/Background 5.png" id="3_ubwgw"]
+[ext_resource type="Texture2D" uid="uid://xhuw7bt7fgej" path="res://assets/sprites/background/Background 4.png" id="4_vkq25"]
+[ext_resource type="Texture2D" uid="uid://d33efmeecf812" path="res://assets/sprites/background/Background 3.png" id="5_7lrji"]
+[ext_resource type="Texture2D" uid="uid://dv8plrwkt55v1" path="res://assets/sprites/background/Background 1.2.png" id="6_rssyh"]
+[ext_resource type="Texture2D" uid="uid://cfd0p5o5rwj58" path="res://assets/sprites/background/Background 1.png" id="7_hwp66"]
 
 [node name="Main" type="Node2D"]
 
@@ -12,5 +16,85 @@ position = Vector2(96, 112)
 [node name="WinterLevel" parent="." instance=ExtResource("2_2vj2h")]
 position = Vector2(128, 160)
 
-[node name="FallingPlatform" parent="." instance=ExtResource("3_y0acb")]
-position = Vector2(-264, 48)
+[node name="Platform" type="Label" parent="."]
+offset_left = 464.0
+offset_top = 56.0
+offset_right = 783.0
+offset_bottom = 105.0
+scale = Vector2(0.5, 0.5)
+text = "Ta platforma wygląda
+na mniej stabilną :("
+horizontal_alignment = 1
+
+[node name="Platform2" type="Label" parent="."]
+offset_left = 80.0
+offset_top = 104.0
+offset_right = 399.0
+offset_bottom = 153.0
+scale = Vector2(0.25, 0.25)
+text = "To znak drogowy!"
+horizontal_alignment = 1
+
+[node name="Shh4" type="Label" parent="."]
+offset_left = 1344.0
+offset_top = 32.0
+offset_right = 1663.0
+offset_bottom = 81.0
+scale = Vector2(0.5, 0.5)
+text = "WITAM W DOMU,
+PANICZU!"
+horizontal_alignment = 1
+
+[node name="Shh5" type="Label" parent="."]
+offset_left = 1288.0
+offset_top = 232.0
+offset_right = 1607.0
+offset_bottom = 281.0
+scale = Vector2(0.5, 0.5)
+text = "Nie każdy upadek to koniec!"
+horizontal_alignment = 1
+
+[node name="Shh" type="Label" parent="."]
+offset_left = 832.0
+offset_top = 304.0
+offset_right = 1000.0
+offset_bottom = 327.0
+scale = Vector2(0.5, 0.5)
+text = "Proszę nie podglądać!"
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+visible = false
+
+[node name="Parallax2D" type="Parallax2D" parent="ParallaxBackground"]
+scroll_offset = Vector2(91, 76)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Parallax2D"]
+texture = ExtResource("3_ubwgw")
+
+[node name="Parallax2D2" type="Parallax2D" parent="ParallaxBackground"]
+scroll_offset = Vector2(32, -72)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Parallax2D2"]
+position = Vector2(59, 148)
+texture = ExtResource("4_vkq25")
+
+[node name="Parallax2D3" type="Parallax2D" parent="ParallaxBackground"]
+scroll_offset = Vector2(32, -72)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Parallax2D3"]
+position = Vector2(59, 148)
+texture = ExtResource("5_7lrji")
+
+[node name="Parallax2D4" type="Parallax2D" parent="ParallaxBackground"]
+scroll_offset = Vector2(32, -72)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Parallax2D4"]
+position = Vector2(59, 145)
+texture = ExtResource("6_rssyh")
+
+[node name="Parallax2D5" type="Parallax2D" parent="ParallaxBackground"]
+scroll_offset = Vector2(32, -72)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Parallax2D5"]
+position = Vector2(59, 145)
+texture = ExtResource("7_hwp66")
