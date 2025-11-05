@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1yvpqqoh1qw4"]
+
+[ext_resource type="TileSet" uid="uid://c7ovmdic6xoul" path="res://maps/winter_level.tres" id="1_71sg4"]
+[ext_resource type="Script" uid="uid://cjhi81g3nir5i" path="res://scenes/interactive/falling_platform.gd" id="2_j85hb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j85hb"]
+size = Vector2(66, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7vrec"]
+size = Vector2(66, 4)
+
+[node name="FallingPlatform" type="TileMapLayer"]
+tile_map_data = PackedByteArray(0, 0, 6, 0, 6, 0, 1, 0, 1, 0, 11, 0, 0, 0, 5, 0, 6, 0, 1, 0, 4, 0, 11, 0, 0, 0, 4, 0, 6, 0, 1, 0, 3, 0, 12, 0, 0, 0, 7, 0, 6, 0, 1, 0, 2, 0, 12, 0, 0, 0)
+tile_set = ExtResource("1_71sg4")
+script = ExtResource("2_j85hb")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(96, 104)
+shape = SubResource("RectangleShape2D_j85hb")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(96, 94)
+shape = SubResource("RectangleShape2D_7vrec")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

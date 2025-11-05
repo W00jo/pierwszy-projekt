@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://kr7x4luxt4sk"]
+[gd_scene load_steps=4 format=3 uid="uid://kr7x4luxt4sk"]
 
 [ext_resource type="PackedScene" uid="uid://c5k0jejm3aywh" path="res://scenes/characters/player.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://bl1nu7hsxfwb5" path="res://scenes/levels/winter_level.tscn" id="2_2vj2h"]
+[ext_resource type="PackedScene" uid="uid://c1yvpqqoh1qw4" path="res://scenes/interactive/falling_platform.tscn" id="3_y0acb"]
 
 [node name="Main" type="Node2D"]
 
@@ -10,3 +11,6 @@ position = Vector2(96, 112)
 
 [node name="WinterLevel" parent="." instance=ExtResource("2_2vj2h")]
 position = Vector2(128, 160)
+
+[node name="FallingPlatform" parent="." instance=ExtResource("3_y0acb")]
+position = Vector2(-264, 48)
